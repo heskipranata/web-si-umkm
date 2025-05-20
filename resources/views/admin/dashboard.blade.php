@@ -1,7 +1,13 @@
 <x-admin-layout>
     <section class="tab-content" id="dashboard">
-        <h1 class="text-3xl font-bold text-green-700 mb-6">Dashboard Utama</h1>
-
+           <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-green-700">Dashboard Utama</h1>
+        <a href="{{ route('admin.reports.index') }}" 
+           class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 shadow inline-flex items-center">
+            <i data-feather="download" class="w-5 h-5 mr-3"></i>
+            Download Laporan
+        </a>
+    </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-6xl">
             <!-- Total Pendapatan Bulanan -->
             <div class="bg-green-100 rounded-lg p-6 flex flex-col items-center justify-center shadow">

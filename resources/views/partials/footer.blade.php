@@ -1,8 +1,8 @@
 <footer class="bg-green-800 text-white py-8">
-    <div class="container mx-auto px-4 text-center">
-        <!-- Ikon Logo Makanjo -->
-        <div class="mb-2">
-            <img src="{{ asset('images/makanjo-icon.png') }}" alt="Makanjo Logo" class="mx-auto h-20">
+    <div class="container mx-auto px-4 text-center items-center">
+        <div class="flex justify-center items-center mb-2">
+            <img src="{{ asset('images/icon-w.png') }}" alt="Makanjo Logo" class="h-8 md:h-14 object-contain">
+            <span class="text-3xl md:text-5xl font-extrabold text-white ml-2">Cabadas jo</span>
         </div>
 
         <!-- Informasi Kontak -->

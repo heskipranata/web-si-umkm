@@ -1,12 +1,9 @@
 @include('partials.header')
 @include('partials.navbar')
-    <!-- Home Section -->
-    <section id="home" class="relative h-screen flex pt-64 justify-center text-white text-center bg-cover bg-center"
+    <section id="home" class="relative h-screen flex pt-32 md:pt-64 justify-center text-white text-center bg-cover bg-center"
         style="background-image: url('{{ asset('images/bg.jpg') }}')">
-        <!-- Overlay -->
         <div class="absolute inset-0 bg-black/60"></div>
 
-        <!-- Content -->
         <div class="relative max-w-5xl z-10 mx-auto px-6 md:px-12">
             <h1 class="text-4xl md:text-6xl font-bold text-green-500 drop-shadow-lg">
                 Rasakan Kelezatan Hidangan Lokal & Modern 🍽️
@@ -23,17 +20,14 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="tentang" class="py-32 bg-green-500">
         <div class="container mx-auto flex flex-col md:flex-row items-stretch px-6 md:px-12 gap-12">
 
-            <!-- Image -->
             <div class="md:w-1/2 h-full">
                 <img src="{{ asset('images/bg2.jpg') }}" alt="Tentang Makanjo"
                     class="rounded-lg shadow-lg object-cover w-full h-full max-h-[400px]" />
             </div>
 
-            <!-- Text -->
             <div class="md:w-1/2 flex flex-col justify-center">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Tentang Makanjo</h2>
                 <p class="text-gray-100 text-xl mb-6 leading-relaxed">
@@ -52,20 +46,17 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
     <section id="menu" class="py-20 bg-white">
         <div class="container mx-auto px-6 md:px-12 text-center">
             <h2 class="text-4xl font-bold text-green-700 mb-2">Menu Kami</h2>
             <p class="text-lg text-gray-700 mb-10">Silakan pesan hidangan favorit Anda langsung dari menu di bawah ini 🍽️
             </p>
 
-            <!-- 🔹 Bagian Makanan -->
             <h3 class="text-2xl font-semibold text-gray-800 mb-6">Makanan</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <!-- Card Makanan 1 -->
                 @foreach ($makanan as $item)
                     <div class="bg-white border border-green-500 rounded-lg shadow hover:shadow-lg transition p-4">
-                        <img src="{{ asset($item->image) }}" alt="Nasi Goreng"
+                        <img src="{{ Str::startsWith($item->image, ['http://', 'https://']) ? $item->image : asset($item->image) }}" alt="{{ $item->name }}"
                             class="w-full h-40 object-cover rounded mb-4">
                         <h4 class="text-xl font-semibold text-gray-800">{{ $item->name }}</h4>
                         <p class="text-green-600 font-bold mt-2">Rp{{ $item->price }}</p>
@@ -79,10 +70,8 @@
                 @endforeach
             </div>
 
-            <!-- 🔹 Bagian Minuman -->
             <h3 class="text-2xl font-semibold text-gray-800 mb-6">Minuman</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card Minuman 1 -->
                 @foreach ($minuman as $item)
                     <div class="bg-white border border-green-500 rounded-lg shadow hover:shadow-lg transition p-4">
                         <img src="{{ asset($item->image) }}" alt="Nasi Goreng"
@@ -105,17 +94,15 @@
             <h2 class="text-4xl font-extrabold text-center text-green-500 mb-8">
             Hubungi Kami 📞
             </h2>
-            <p class="text-center text-green-900 mb-12 px-72 font-bold">
+            <p class="text-center text-green-900 mb-12 md:px-72 font-bold">
                 Untuk keperluan bisni, saran, komentar dan laporan silahkan hubungi kami dengan mengirimkan pesan melalui form berikut. Kami siap membantu Anda 🫡!
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Google Map -->
                 <div class="col-span-1 ">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255256.04460025943!2d124.7844865!3d1.540815549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32879ef9ffb30fd3%3A0x3030bfbcaf77280!2sManado%2C%20Manado%20City%2C%20North%20Sulawesi!5e0!3m2!1sen!2sid!4v1746919976756!5m2!1sen!2sid" class="w-full h-80 rounded-lg shadow-lg" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="col-span-1">
                     <form action="" class="space-y-4 bg-gray-200 p-3 rounded-lg shadow-lg">
                         <div class="flex gap-4">

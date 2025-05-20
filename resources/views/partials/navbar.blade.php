@@ -1,12 +1,9 @@
 <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50 mx-3 md:mx-4 rounded mt-2 py-3">
     <div class="container mx-auto flex items-center justify-between px-4">
-        <!-- Logo Gambar Horizontal -->
-        <a href="{{ url('/#home') }}" class="flex items-center">
-            <img src="{{ asset('images/makanjo-icon.png') }}" alt="Makanjo Logo" class="h-10 md:h-14 object-contain">
-            <!-- Ganti dengan path ke ikon horizontal -->
+        <a href="{{ url('/#home') }}" class="flex items-center space-x-1">
+            <img src="{{ asset('images/icon.png') }}" alt="Makanjo Logo" class="h-8 md:h-12 object-contain">
+            <span class="text-3xl md:text-4xl font-extrabold text-green-600">Cabadas jo</span>
         </a>
-
-        <!-- Tombol Toggle untuk Mobile -->
         <button class="md:hidden text-2xl focus:outline-none" @click="open = !open">
             ☰
         </button>
