@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- Vite CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Figtree', sans-serif !important;
+        }
+    </style>
 
 </head>
 

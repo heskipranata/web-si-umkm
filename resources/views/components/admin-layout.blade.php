@@ -77,6 +77,11 @@
     <script>
         feather.replace();
     </script>
+        <style>
+        body {
+            font-family: 'Figtree', sans-serif !important;
+        }
+    </style>
 </body>
 
 </html>
