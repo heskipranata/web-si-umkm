@@ -9,6 +9,9 @@ use App\Http\Controllers\ReportController;
 
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/ping', function () {
+    return 'OK';
+});
 Route::get('/checkout', [TransactionController::class, 'checkout'])->name('checkout');
 Route::post('/checkout', [TransactionController::class, 'store'])->name('transaction.store');
 Route::get('/transaction/success', function () {
@@ -20,7 +23,7 @@ Route::middleware(['auth', 'verified', 'isAdmin'])->group(function () {
     Route::get('/dashboard/transaction', function () {
         return view('admin.transaction');
     })->name('admin.transaction');
-    
+
     Route::get('/dashboard/list-product', [DashboardController::class, 'product'])->name('admin.product');
     Route::get('/dashboard/list-product/create', [DashboardController::class, 'create'])->name('menus.create');
     Route::post('/dashboard/list-product', [DashboardController::class, 'store'])->name('menus.store');
