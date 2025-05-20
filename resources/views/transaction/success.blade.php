@@ -22,7 +22,6 @@
 </div>
 
 <script>
-    // Hapus isi cart di localStorage saat halaman success dimuat
     document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('cart');
     });
