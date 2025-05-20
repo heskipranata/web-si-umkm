@@ -11,7 +11,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Vite CSS -->
-        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/script.js'])
+       <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
