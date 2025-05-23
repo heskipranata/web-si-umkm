@@ -9,7 +9,8 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/script.js', 'resources/js/admin'])
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         .modal {
             display: none;
@@ -76,6 +77,11 @@
     <script>
         feather.replace();
     </script>
+        <style>
+        body {
+            font-family: 'Figtree', sans-serif !important;
+        }
+    </style>
 </body>
 
 </html>
