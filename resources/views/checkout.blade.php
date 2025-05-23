@@ -98,7 +98,7 @@
         if (method === 'Cash') {
             note.textContent = 'Silakan bayar di kasir setelah konfirmasi.';
         } else {
-            note.innerHTML = 'Transfer ke rekening <span class="font-semibold text-blue-600">BCA 1234567890</span> atau <span class="font-semibold text-blue-600">BRI 4547221279</span> a.n. <span class="font-medium">Warung Makan Makanjo</span>.';
+            note.innerHTML = 'Transfer ke rekening <span class="font-semibold text-blue-600">BCA 1234567890</span> atau <span class="font-semibold text-blue-600">BRI 4547221279</span> a.n. <span class="font-medium">Warung Makan Cabadas jo</span>.';
         }
     }
 </script>

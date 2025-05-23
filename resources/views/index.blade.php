@@ -1,7 +1,7 @@
 @include('partials.header')
 @include('partials.navbar')
     <section id="home" class="relative h-screen flex pt-32 md:pt-64 justify-center text-white text-center bg-cover bg-center"
-        style="background-image: url('{{ asset('images/bg.jpg') }}')">
+        style="background-image: url('https://res.cloudinary.com/dewi8c1ll/image/upload/v1747974721/bg_gmb89t.jpg')">
         <div class="absolute inset-0 bg-black/60"></div>
 
         <div class="relative max-w-5xl z-10 mx-auto px-6 md:px-12">
@@ -9,7 +9,7 @@
                 Rasakan Kelezatan Hidangan Lokal & Modern 🍽️
             </h1>
             <p class="mt-4 text-lg text-white drop-shadow">
-                Makanjo menyajikan pengalaman kuliner terbaik dengan cita rasa otentik,
+                Cabadas jo menyajikan pengalaman kuliner terbaik dengan cita rasa otentik,
                 sentuhan modern, dan suasana yang nyaman. Temukan menu favoritmu dan nikmati momen istimewa bersama keluarga
                 & teman! 😋
             </p>
@@ -24,20 +24,20 @@
         <div class="container mx-auto flex flex-col md:flex-row items-stretch px-6 md:px-12 gap-12">
 
             <div class="md:w-1/2 h-full">
-                <img src="{{ asset('images/bg2.jpg') }}" alt="Tentang Makanjo"
+                <img src="https://res.cloudinary.com/dewi8c1ll/image/upload/v1747974707/bg2_ofaxma.jpg" alt="Tentang Cabadas jo"
                     class="rounded-lg shadow-lg object-cover w-full h-full max-h-[400px]" />
             </div>
 
             <div class="md:w-1/2 flex flex-col justify-center">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Tentang Makanjo</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Tentang Cabadas jo</h2>
                 <p class="text-gray-100 text-xl mb-6 leading-relaxed">
-                    Terletak di jantung <span class="font-semibold text-green-800">kota Manado</span>, Makanjo hadir sebagai
+                    Terletak di jantung <span class="font-semibold text-green-800">kota Manado</span>, Cabadas jo hadir sebagai
                     restoran yang menggabungkan cita rasa <strong>kuliner lokal</strong> dengan sentuhan <strong>modern dan
                         elegan</strong>. Kami berkomitmen menyajikan hidangan berkualitas tinggi menggunakan bahan-bahan
                     segar pilihan dari tanah Sulawesi.
                 </p>
                 <p class="text-gray-100 text-lg leading-relaxed">
-                    Dari suasana yang hangat hingga pelayanan ramah, Makanjo adalah tempat ideal untuk menikmati makan
+                    Dari suasana yang hangat hingga pelayanan ramah, Cabadasjo adalah tempat ideal untuk menikmati makan
                     bersama keluarga, teman, ataupun pertemuan bisnis. Mari ciptakan momen istimewa di kota Manado bersama
                     kami!
                 </p>

@@ -1,14 +1,14 @@
 <footer class="bg-green-800 text-white py-8">
     <div class="container mx-auto px-4 text-center items-center">
         <div class="flex justify-center items-center mb-2">
-            <img src="{{ asset('images/icon-w.png') }}" alt="Makanjo Logo" class="h-8 md:h-14 object-contain">
+            <img src="{{ asset('images/icon-w.png') }}" alt="Cabadas jo Logo" class="h-8 md:h-14 object-contain">
             <span class="text-3xl md:text-5xl font-extrabold text-white ml-2">Cabadas jo</span>
         </div>
 
         <!-- Informasi Kontak -->
         <div class="space-y-2 mb-2">
             <p>Jl. Anker 189 Manado, Sulawesi Utara 95115</p>
-            <p>Email: makanjo@gmail.com</p>
+            <p>Email: cabadasjo@gmail.com</p>
             <p>Telepon: +62 825-3123-3456</p>
         </div>
 

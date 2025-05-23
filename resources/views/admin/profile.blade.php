@@ -1,7 +1,5 @@
 <x-admin-layout>
-    <!-- Header Utama -->
     <div class="flex justify-between items-start mb-6">
-        <!-- Judul Halaman -->
         <div>
             <h1 class="text-3xl font-extrabold text-gray-900">Kelola Profil dan Akun Admin</h1>
             <p class=" text-gray-500 mt-1">
@@ -9,7 +7,6 @@
             </p>
         </div>
 
-        <!-- Info Admin Login di Kanan Atas -->
         <div class="flex items-center space-x-3">
             <div class="text-right">
                 <h2 class="text-sm text-gray-500">Selamat datang admin,</h2>
@@ -30,12 +27,10 @@
                 @endif
 
 
-                <!-- Form Edit Profil -->
                 <form method="POST" action="{{ route('profile.update') }}" class="space-y-6">
                     @csrf
                     @method('PATCH')
 
-                    <!-- Nama -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
                         <input type="text" name="name" value="{{ old('name', auth()->user()->name) }}"
@@ -45,7 +40,7 @@
                         @enderror
                     </div>
 
-                    <!-- Email -->
+
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Alamat Email</label>
                         <input type="email" name="email" value="{{ old('email', auth()->user()->email) }}"
@@ -55,7 +50,6 @@
                         @enderror
                     </div>
 
-                    <!-- Tombol Simpan -->
                     <div class="pt-4">
                         <button type="submit"
                             class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
@@ -64,7 +58,6 @@
                     </div>
                 </form>
 
-                <!-- Hapus Akun -->
                 <hr class="my-10">
                 <h2 class="text-lg font-semibold text-red-700 mb-2">Hapus Akun</h2>
                 <form method="POST" action="{{ route('profile.destroy') }}"
@@ -77,7 +70,6 @@
                     </button>
                 </form>
 
-                <!-- Tambah Admin Baru -->
                 <hr class="my-10">
 
                 <h2 class="text-lg font-semibold text-green-700 mb-4">Tambah Admin Baru</h2>

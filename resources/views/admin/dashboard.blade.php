@@ -9,7 +9,6 @@
         </a>
     </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-6xl">
-            <!-- Total Pendapatan Bulanan -->
             <div class="bg-green-100 rounded-lg p-6 flex flex-col items-center justify-center shadow">
                 <div class="text-green-800 text-4xl font-bold leading-none">
                     Rp {{ number_format($totalPendapatanBulanIni, 0, ',', '.') }}
@@ -17,7 +16,6 @@
                 <p class="text-green-700 mt-2 font-semibold">Pendapatan Bulanan</p>
             </div>
 
-            <!-- Total Transaksi Bulanan -->
             <div class="bg-green-100 rounded-lg p-6 flex flex-col items-center justify-center shadow">
                 <div class="text-green-800 text-4xl font-bold leading-none">
                     {{ $totalTransaksiBulanIni }}
@@ -25,7 +23,6 @@
                 <p class="text-green-700 mt-2 font-semibold">Transaksi Bulanan</p>
             </div>
 
-            <!-- Produk Terlaris -->
             <div class="bg-green-100 rounded-lg p-6 flex flex-col items-center justify-center shadow">
                 <div class="text-green-800 text-3xl font-bold">
                     {{ $produkTerlaris->name }}
@@ -34,12 +31,10 @@
             </div>
         </div>
 
-        <!-- Grafik Pendapatan Mingguan -->
         <div class="bg-white rounded-lg shadow p-6 " style="height: 350px;">
             <canvas id="salesChart" style="width: 100%; height: 100%; display: block;"></canvas>
         </div>
 
-        <!-- Tips -->
         <div class="max-w-6xl mx-auto mt-10">
             <div class="bg-white rounded-lg shadow p-6">
                 <h2 class="text-xl font-bold text-green-700 mb-4">Tips Penjualan Hari Ini</h2>
@@ -58,7 +53,6 @@
        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
             
-            // Ambil data dari controller Laravel
             const dataMingguan = @json($dataMingguan);
             console.log("Data mingguan:", dataMingguan);
 
